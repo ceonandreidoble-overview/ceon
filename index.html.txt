@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ceon Andrei Doble | BSIT Portfolio</title>
+  <meta name="description" content="Portfolio of Ceon Andrei Doble, a Bachelor of Science in Information Technology student.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#home" class="logo" aria-label="Ceon Andrei Doble, home">CD</a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="site-menu" id="site-menu">
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <form class="search" id="search-form" role="search">
+        <label for="search-input" class="visually-hidden">Search hobbies</label>
+        <input type="search" id="search-input" placeholder="Search hobbies" autocomplete="off">
+        <button type="submit" aria-label="Search">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Ceon Andrei Doble</h1>
+        <p>Bachelor of Science in Information Technology student. This is my portfolio: who I am, what I enjoy outside class and how to reach me.</p>
+        <ul class="chips">
+          <li>Programming</li>
+          <li>Web design</li>
+          <li>Networking</li>
+          <li>Databases</li>
+        </ul>
+        <a href="#about" class="btn">More about me</a>
+      </div>
+
+      <figure class="photo hero-img">
+        <svg class="art" viewBox="0 0 800 640" role="img" aria-label="BSIT logo for Information Technology">
+          <rect width="800" height="640" fill="#14201f"/>
+          <g stroke="#2e6f73" stroke-width="4" fill="none" stroke-linecap="round">
+            <path d="M40 120H160L210 170H300"/>
+            <path d="M40 220H120L170 270"/>
+            <path d="M760 120H640L590 170H500"/>
+            <path d="M760 220H680L630 270"/>
+            <path d="M40 520H160L210 470H300"/>
+            <path d="M760 520H640L590 470H500"/>
+            <path d="M40 420H120L170 370"/>
+            <path d="M760 420H680L630 370"/>
+          </g>
+          <g fill="#e9b949">
+            <circle cx="40" cy="120" r="8"/><circle cx="40" cy="220" r="8"/>
+            <circle cx="760" cy="120" r="8"/><circle cx="760" cy="220" r="8"/>
+            <circle cx="40" cy="520" r="8"/><circle cx="40" cy="420" r="8"/>
+            <circle cx="760" cy="520" r="8"/><circle cx="760" cy="420" r="8"/>
+          </g>
+          <circle cx="400" cy="320" r="190" fill="#1b3433" stroke="#e9b949" stroke-width="6"/>
+          <circle cx="400" cy="320" r="168" fill="none" stroke="#2e6f73" stroke-width="2"/>
+          <text x="400" y="235" text-anchor="middle" font-family="Bricolage Grotesque, Segoe UI, sans-serif" font-size="58" font-weight="700" fill="#e9b949">&lt;/&gt;</text>
+          <text x="400" y="345" text-anchor="middle" font-family="Bricolage Grotesque, Segoe UI, sans-serif" font-size="108" font-weight="700" fill="#f6f8f7">BSIT</text>
+          <line x1="285" y1="375" x2="515" y2="375" stroke="#e9b949" stroke-width="3"/>
+          <text x="400" y="415" text-anchor="middle" font-family="Figtree, Segoe UI, sans-serif" font-size="27" fill="#cfe3e1">Information</text>
+          <text x="400" y="447" text-anchor="middle" font-family="Figtree, Segoe UI, sans-serif" font-size="27" fill="#cfe3e1">Technology</text>
+        </svg>
+        <img src="logo.png" alt="BSIT logo">
+      </figure>
+    </section>
+
+    <section class="about" id="about">
+      <span class="section-label">About me</span>
+
+      <figure class="photo about-img">
+        <svg class="art" viewBox="0 0 640 640" role="img" aria-label="Profile picture placeholder">
+          <rect width="640" height="640" fill="#e8dcc4"/>
+          <circle cx="320" cy="250" r="105" fill="#2e6f73"/>
+          <path d="M110 640C110 470 210 400 320 400C430 400 530 470 530 640Z" fill="#2e6f73"/>
+          <circle cx="520" cy="110" r="55" fill="#e9b949"/>
+        </svg>
+        <img src="data:image/jpeg;base64,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" alt="Ceon Andrei Doble">
+      </figure>
+
+      <div class="about-text">
+        <h2>Hi, I’m Ceon Andrei</h2>
+        <p>I’m a BSIT student from Danacbunga, Botolan, Zambales. I’m learning how computers, software and networks work, and I like turning what I learn into real projects.</p>
+        <p>Outside class I play sports, read and play games with friends. You can see them in my hobbies below.</p>
+        <p>Replace this text with your own story, goals and the skills you want people to know about.</p>
+        <a href="#contact" class="btn btn-rect">Contact me</a>
+      </div>
+    </section>
+
+    <section class="featured" id="hobbies">
+      <span class="section-label">Hobbies</span>
+      <div class="featured-head">
+        <h2>What I do outside class</h2>
+        <p id="search-status" class="search-status" role="status" aria-live="polite" hidden></p>
+      </div>
+
+      <div class="cards" id="cards">
+        <article class="card" data-keywords="basketball sports ball court hoops">
+          <figure class="photo card-img">
+            <svg class="art" viewBox="0 0 480 360" role="img" aria-label="Basketball graphic">
+              <rect width="480" height="360" fill="#e8dcc4"/>
+              <rect y="290" width="480" height="70" fill="#14201f" opacity=".08"/>
+              <circle cx="240" cy="180" r="95" fill="#d9722b"/>
+              <g fill="none" stroke="#14201f" stroke-width="5">
+                <path d="M145 180H335"/>
+                <path d="M240 85V275"/>
+                <path d="M175 112C215 150 215 210 175 248"/>
+                <path d="M305 112C265 150 265 210 305 248"/>
+                <circle cx="240" cy="180" r="95"/>
+              </g>
+            </svg>
+            <img src="basketball.jpg" alt="Basketball">
+          </figure>
+          <h3>Basketball</h3>
+          <p>Pickup games with friends are my favorite way to stay active and unwind.</p>
+        </article>
+
+        <article class="card" data-keywords="reading books book read stories learn">
+          <figure class="photo card-img">
+            <svg class="art" viewBox="0 0 480 360" role="img" aria-label="Open book graphic">
+              <rect width="480" height="360" fill="#cfe3e1"/>
+              <rect y="290" width="480" height="70" fill="#14201f" opacity=".08"/>
+              <path d="M240 105C200 85 150 85 105 100V265C150 250 200 250 240 272Z" fill="#f6f8f7" stroke="#14201f" stroke-width="5" stroke-linejoin="round"/>
+              <path d="M240 105C280 85 330 85 375 100V265C330 250 280 250 240 272Z" fill="#f6f8f7" stroke="#14201f" stroke-width="5" stroke-linejoin="round"/>
+              <g stroke="#2e6f73" stroke-width="5" stroke-linecap="round">
+                <path d="M138 140C165 135 190 138 210 148"/>
+                <path d="M138 175C165 170 190 173 210 183"/>
+                <path d="M138 210C165 205 190 208 210 218"/>
+                <path d="M270 148C290 138 315 135 342 140"/>
+                <path d="M270 183C290 173 315 170 342 175"/>
+                <path d="M270 218C290 208 315 205 342 210"/>
+              </g>
+            </svg>
+            <img src="reading.jpg" alt="Reading books">
+          </figure>
+          <h3>Reading Books</h3>
+          <p>A good book helps me learn something new and gives my mind a rest.</p>
+        </article>
+
+        <article class="card" data-keywords="online games gaming play video games console friends">
+          <figure class="photo card-img">
+            <svg class="art" viewBox="0 0 480 360" role="img" aria-label="Game controller graphic">
+              <rect width="480" height="360" fill="#d5e3d0"/>
+              <rect y="290" width="480" height="70" fill="#14201f" opacity=".08"/>
+              <path d="M130 140H350C390 140 410 240 383 265C362 282 335 252 315 230H165C145 252 118 282 97 265C70 240 90 140 130 140Z" fill="#14201f"/>
+              <rect x="150" y="182" width="56" height="16" rx="3" fill="#f6f8f7"/>
+              <rect x="170" y="162" width="16" height="56" rx="3" fill="#f6f8f7"/>
+              <circle cx="300" cy="176" r="12" fill="#e9b949"/>
+              <circle cx="332" cy="196" r="12" fill="#cfe3e1"/>
+              <circle cx="300" cy="216" r="12" fill="#2e6f73"/>
+              <circle cx="268" cy="196" r="12" fill="#f6f8f7"/>
+            </svg>
+            <img src="gaming.jpg" alt="Playing online games">
+          </figure>
+          <h3>Online Games</h3>
+          <p>I play online games to relax, team up with friends and sharpen my strategy.</p>
+        </article>
+
+        <article class="card" data-keywords="volleyball vb sports ball team spike serve">
+          <figure class="photo card-img">
+            <svg class="art" viewBox="0 0 480 360" role="img" aria-label="Volleyball graphic">
+              <rect width="480" height="360" fill="#e6e9ea"/>
+              <rect y="290" width="480" height="70" fill="#14201f" opacity=".08"/>
+              <circle cx="240" cy="180" r="95" fill="#f6f8f7"/>
+              <path d="M240 85C235 142 255 190 330 212A95 95 0 0 0 240 85Z" fill="#2e6f73" opacity=".85"/>
+              <g fill="none" stroke="#14201f" stroke-width="5">
+                <path d="M152 140C200 160 250 150 290 98"/>
+                <path d="M240 85C235 142 255 190 330 212"/>
+                <path d="M170 250C210 220 232 195 240 180"/>
+                <circle cx="240" cy="180" r="95"/>
+              </g>
+            </svg>
+            <img src="volleyball.jpg" alt="Volleyball">
+          </figure>
+          <h3>Volleyball</h3>
+          <p>I love the teamwork of volleyball, from the first serve to the last spike.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contact" id="contact">
+    <span class="section-label">Contact</span>
+
+    <div class="contact-links">
+      <a href="https://instagram.com/ceonandreidoble" target="_blank" rel="noopener" class="contact-item">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span>
+        <span><strong>Instagram</strong><br>ceonandreidoble</span>
+      </a>
+      <a href="mailto:dobleceonandrei@gmail.com" class="contact-item">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+        <span><strong>Email</strong><br>dobleceonandrei@gmail.com</span>
+      </a>
+      <a href="https://maps.google.com/?q=Danacbunga+Botolan+Zambales" target="_blank" rel="noopener" class="contact-item">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <span><strong>Location</strong><br>Danacbunga, Botolan, Zambales</span>
+      </a>
+    </div>
+
+    <form class="contact-form" id="contact-form" novalidate>
+      <div class="field">
+        <label for="name">Name</label>
